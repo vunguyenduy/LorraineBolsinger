@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <title></title>
+  
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css">
+
+    <link rel="stylesheet" href="css/gs.css">
+  
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="home">
+    <div>
+        <div>
+            <img class="gb-img" src="img/gb-image.png" alt="image"/>
+        </div>
+        <div class="gb-name">
+            Lorraine Bolsinger
+        </div>
+        <div class="gb-job">
+          CEO and President, GE Aviation Systems LLC
+        </div>
+
+        <div id="news" class="hlist">
+            
+        </div>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top" class="bar-style">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Articles -->
+<div data-role="page" id="articles">
+    <div class="page-title">
+        <span class="title">Articles</span>
+    </div>
+    <ul id="articleList" data-role="listview" data-divider-theme="b" class="list">
+        <li data-theme="c" class="vi-bullet">
+            <a href="#v1" data-transition="slide" onclick="playSelectedVideo('video1')">
+                <div class="source">Russell Reynolds Associates</div><div class="ar-date">Jan 16, 2013</div><br/>
+                <div class="ar-title">Cardinal Health's Chairman & CEO George Barrett on Board Leadership</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a11" data-transition="slide">
+                <div class="source">Reliable Plant</div><br/>
+                <div class="ar-title">GE's China avionics deal A Q&A with presidentCEO Lorraine Bolsinger</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a4" data-transition="slide">
+                <div class="source">udayton.edu</div><div class="ar-date">Dec 07, 2013</div><br/>
+                <div class="ar-title">Brick and Mortarboard</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a1" data-transition="slide">
+                <div class="source">khl.com</div><div class="ar-date">Oct 24, 2013</div><br/>
+                <div class="ar-title">APR buys GE gas turbine rental business</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a3" data-transition="slide">
+                <div class="source">corporatelivewire.com</div><div class="ar-date">Oct 24, 2013</div><br/>
+                <div class="ar-title">APR Energy plc Acquires General Electric Company</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a2" data-transition="slide">
+                <div class="source">Reuters</div><div class="ar-date">Oct 23, 2013</div><br/>
+                <div class="ar-title">APR Energy in $314 mln deal for GE Power rental business</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a12" data-transition="slide">
+                <div class="source">udquickly.udayton.edu</div><div class="ar-date">Jul 11, 2013</div><br/>
+                <div class="ar-title">Imagination at Work</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a16" data-transition="slide">
+                <div class="source">mckinsey.com</div><div class="ar-date">Feb 2013</div><br/>
+                <div class="ar-title">Six social-media skills every leader needs</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a10" data-transition="slide">
+                <div class="source">bizjournals.com</div><div class="ar-date">Jul 16, 2012</div><br/>
+                <div class="ar-title">GE Aviation, Boeing land $180M deal for U.S. Air Force tankers</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a5" data-transition="slide">
+                <div class="source">flightglobal.com</div><div class="ar-date">Jul 09, 2012</div><br/>
+                <div class="ar-title">Farnborough Interview with Lorraine Bolsinger, CEO of GE Aviation Systems</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a17" data-transition="slide">
+                <div class="source">CNet</div><div class="ar-date">Jul 09, 2012</div><br/>
+                <div class="ar-title">Stirring GE's Ecomagination</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a8" data-transition="slide">
+                <div class="source">Dayton Dayly News</div><div class="ar-date">May 01, 2012</div><br/>
+                <div class="ar-title">GE Aviation Expects to Add 200 More Area Jobs</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a14" data-transition="slide">
+                <div class="source">Women Worth Watching</div><div class="ar-date">Sep 01, 2011</div><br/>
+                <div class="ar-title">Lorraine Bolsinger GE</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a6" data-transition="slide">
+                <div class="source">The Washington Post</div><div class="ar-date">Aug 22, 2011</div><br/>
+                <div class="ar-title">GE ‘all in’ on aviation deal with China</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a13" data-transition="slide">
+                <div class="source">bizjournals.com</div><div class="ar-date">Aug 23, 2011</div><br/>
+                <div class="ar-title">It's not like selling bananas, says GE Aviation exec Bolsinger</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a9" data-transition="slide">
+                <div class="source">GE Aviation</div><div class="ar-date">May 10, 2011</div><br/>
+                <div class="ar-title">GE Aviation Study Shows Millions in Savings for Airlines, Reduced Flight Time for Travelers</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a18" data-transition="slide">
+                <div class="source">prototypetoday.com</div><div class="ar-date">Apr 15, 2011</div><br/>
+                <div class="ar-title">University of Dayton groundbreaking ceremony for a $51 million GE Aviation research-and-development center</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a7" data-transition="slide">
+                <div class="source">GE Aviation</div><div class="ar-date">Apr 14, 2011</div><br/>
+                <div class="ar-title">GE Aviation Breaks Ground for New $51 Million Research & Development Center in Ohio's Aerospace Hub</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a15" data-transition="slide">
+                <div class="source">bizjournals.com</div><div class="ar-date">Jun 11, 2009</div><br/>
+                <div class="ar-title">Q&A with GE Aviation Systems' Lorraine Bolsinger</div>
+            </a>
+        </li>
+    </ul>
+    
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--v1-->
+<div data-role="page" id="v1">
+    <a class="back arrow" href='#articles' data-transition="slide" onclick="stopCurrentVideo();">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Cardinal Health's Chairman & CEO George Barrett on Board Leadership
+    </div>
+    <div class="a-body">
+        <video id="video1" style="width:300px" controls>
+            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!--a1-->
+<div data-role="page" id="a1">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        APR buys GE gas turbine rental business
+    </div>
+    <div class="a-body">
+        <div>APR Energy has acquired GE’s international power rental projects business for US$314 million. APR will pay $64 million in cash with GE taking the remainder in APR shares, giving it a 16.5% stake in the power rental company.</div><br/>
+
+        <div>The acquired rental business, which was part of GE’s Power & Water division, rents mobile gas turbines and has a power fleet of 520 MW. It currently has 20 large gas turbines rented on contracts in Bangladesh, Iraq, the US Virgin Islands, Canada, Australia and Dubai.</div><br/>
+
+        <div>APR said the deal boosts its mobile turbine fleet to 1.2 GW, diversifies its geographical footprint, increases its fleet of natural gas gensets, a makes GE a strategic partner both in terms of ownership and for service and maintenance back-up.</div><br/>
+
+        <div>GE sold its main diesel power rentals business to Aggreko in 2006, but has since been involved in the rental of large gas powered generators.</div><br/>
+
+        <div>APR Energy's chief executive officer, John Campion, said the deal was an endorsement by GE of APR’s potential to be the leader in large-scale power projects and that it would transform the company; “By creating the world's leading fast-track mobile turbine power business and a long-term relationship with GE, we are well placed to deliver against an underserved and rapidly growing opportunity with the preeminent technology.</div><br/>
+
+        <div>“The transaction diversifies our revenue base, gives us exposure to new geographies and sectors, and enhances our natural gas footprint."</div><br/>
+
+        <div>Lorraine Bolsinger, CEO of GE's  Power & Water Distributed Power business, said; “Our investment in APR Energy reinforces our strong belief in the distributed power segment, as well as APR's strong capabilities and prospects for success.</div><br/>
+
+        <div>“We continue to see growing demand from customers urgently needing our leading technology for bridging solutions while more permanent solutions can be put in place. With this alliance, customers can get fast power with our technology from a premiere fast-track power provider, APR Energy, or they can buy the equipment from us."</div><br/>
+
+
+        <div class="gray-header">Published</div>
+        <div>Oct 24, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>By Murray Pollok</div>
+        <div>http://www.khl.com/magazines/international-rental-news/detail/item89555/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a2-->
+<div data-role="page" id="a2">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        APR Energy in $314 mln deal for GE Power rental business
+    </div>
+    <div class="a-body">
+        <div>APR Energy has agreed to buy General Electric's power rental business for $314 million in cash and stock, consolidating its position in the temporary power market and making GE its biggest investor.</div><br/>
+
+        <div>London-listed APR, which provides temporary power plants for disaster relief operations, major events and countries that suffer regional electricity shortfalls, will give GE a 16.5 percent stake valued at about $250 million, plus $64 million in cash, to acquire the rental operation within the U.S. group's Power & Water subsidiary.</div><br/>
+
+        <div>"This is a financially compelling transaction," APR Energy Chief Executive John Campion told Reuters, adding that it would boost the company's earnings in the first full year.</div><br/>
+
+        <div>APR was the top gainer on the London Stock Exchange on Wednesday morning, with the deal sending its shares up 19 percent to 11.34 pounds by 0908 GMT.</div><br/>
+
+        <div>"APR is effectively buying the No.3 player in the global power rentals business, so this deal will consolidate the group's position as the second-largest operator in this market," Investec Securities analyst John Lawson said in a note.</div><br/>
+
+        <div>A majority of APR's clients are located in developing markets such as Africa, Latin America, the Middle East and Asia, where demand for readily available energy has been increasing.</div><br/>
+
+        <div>APR said the acquisition would give it 520 megawatts of power generation capacity, including five associated rental contracts with 20 temporary power generation assets based in Bangladesh, Iraq, the U.S. Virgin Islands, Canada, Australia and Dubai.</div><br/>
+
+        <div>GE, meanwhile, said its investment in APR reinforces its strong belief in the distributed power segment.</div><br/>
+
+        <div>The deal provides customers with access to fast-track power from APR using GE's technology and the option to buy GE's equipment, said Lorraine Bolsinger, CEO of GE Power & Water's distributed power business.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Oct 23, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>By Karen Rebelo and Roshni Menon</div>
+        <div>http://www.reuters.com/article/2013/10/23/aprenergy-acquisition-idUSL3N0ID1TU20131023</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a3-->
+<div data-role="page" id="a3">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        APR Energy plc Acquires General Electric Company
+    </div>
+    <div class="a-body">
+        <div>APR Energy plc (LSE: APR) today announces that it has entered into an agreement ("Acquisition Agreement") with General Electric Company (NYSE: GE) ("GE") for the acquisition ("Acquisition") by the Company of the power rental business (the "GE Business") of GE. To coincide with this announcement, the Company has also brought forward its Q3 IMS covering the period from 1 July 2013 through to 23 October 2013 and released a further RNS covering this trading update.</div><br/>
+
+        <div>GE Power & Water, part of GE, is a global leader in manufacturing and servicing mobile gas turbine equipment. The GE Business has its principal operations based in Houston and is a provider of temporary power generation rental through the use of mobile gas turbines of less than 50MW. The GE Business to be transferred pursuant to the Acquisition Agreement has 520MW of power generation capacity in its portfolio, which includes five associated rental contracts with 20 temporary power generation assets based in Bangladesh, Iraq, the U.S. Virgin Islands, Canada, Australia and Dubai. The Acquisition advances APR Energy towards its stated strategic goals, creating the world's leading fast-track mobile turbine fleet of 1.2GW, significantly strengthening and diversifying APR Energy's business, and creating a long-term strategic alliance with GE.</div><br/>
+
+        <div>Under the terms of the Acquisition Agreement, GE will receive a total consideration of US$314 million, of which US$250 million will be satisfied by way of the issue to GE of approximately 15.5 million of APR Energy plc ordinary shares ("Ordinary Shares") of £0.10 ("Acquisition Shares") and with the remaining US$64 million being in cash. Application will be made to the Financial Conduct Authority and the London Stock Exchange for the Acquisition Shares to be admitted to the Official List and to trading on the London Stock Exchange. It is expected that dealings will commence on 28 October 2013.</div><br/>
+
+        <div>The board of the Company believes that the Acquisition is in the best interests of the Group and its shareholders, as well as its broader stakeholders, because it:</div><br/>
+
+        <div>Creates a long-term strategic alliance with GE, providing dedicated supply for the fast-track, turnkey power segment, a collaborative business development platform, and expanded access to worldwide support services, subject to existing contractual arrangements</div><br/>
+        <div>Makes GE a key strategic investor in APR Energy</div><br/>
+        <div>Significantly strengthens and diversifies APR Energy's global footprint and contract revenue base, providing access to new developed and developing countries</div><br/>
+        <div>Enhances APR Energy's large scale, fast-track power business, positioning APR Energy well to take advantage of expanding opportunities with the fastest growing technology in the industry</div><br/>
+        <div>Greatly improves APR Energy's footprint in natural gas, a growing fuel source that is both cost-efficient and emissions friendly</div><br/>
+        <div>Has a strong financial rationale and is expected to be earnings accretive for the Company
+        Delivers enhanced cash generation for the enlarged group (the "Enlarged Group")</div><br/>
+
+        <div>Commenting on the announcement, APR Energy's Chief Executive Officer, John Campion said:</div><br/>
+
+        <div>"This is a transformational transaction for APR Energy, allowing us to move forward rapidly towards delivering our stated medium-term business objectives. By creating the world's leading fast-track mobile turbine power business and a long-term relationship with GE, we are well placed to deliver against an underserved and rapidly growing opportunity with the preeminent technology. The transaction diversifies our revenue base, gives us exposure to new geographies and sectors, and enhances our natural gas footprint. We are excited to be working closely with GE, whose partnership and equity commitment is an endorsement of our prospects and our ambition to be the leader in the large-scale, fast-track power industry."</div><br/>
+
+        <div>Commenting on the announcement, CEO of GE's  Power & Water Distributed Power business, Lorraine Bolsinger said</div><br/>
+
+        <div>"Our investment in APR Energy reinforces our strong belief in the distributed power segment, as well as APR's strong capabilities and prospects for success. We continue to see growing demand from customers urgently needing our leading technology for bridging solutions while more permanent solutions can be put in place. With this alliance, customers can get fast power with our technology from a premiere fast-track power provider, APR Energy, or they can buy the equipment from us.  For both kinds of customers, we are determined to offer the most efficient products and have them available for rapid deployment."</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Oct 24, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>http://www.corporatelivewire.com/index.php/de-luxe/de-luxe/deal.html?id=apr-energy-plc-acquires-general-electric-company</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a4-->
+<div data-role="page" id="a4">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Brick and Mortarboard
+    </div>
+    <div class="a-body">
+        <div>To build an “intellectual heart and soul,” you need a lot of bricks — 160,000.</div><br/>
+
+        <div>The GE Aviation Electrical Power Integrated Systems Center will be “the intellectual heart and soul” of GE Aviation’s electrical power business with potentially 150 to 200 researchers in the next five years, said Lorraine A. Bolsinger, former president and CEO of GE Aviation Systems.</div><br/>
+
+        <div>Construction of the center, on campus at Patterson Boulevard and River Park Drive, is on schedule for employees and equipment to move in this summer. A grand opening is being planned for December.</div><br/>
+
+        <div>Those bricks — twice the size of residential bricks — tell a small part of the story that’s greater than the four stories or 139,000 square feet of office and lab space they enclose.</div><br/>
+
+        <div>It starts with a partnership.</div><br/>
+
+        <div>In 2010, the University and GE Aviation announced plans to build a new research center on University land, a former brownfield where NCR once built cash registers.</div><br/>
+
+        <div>The partnership is bolstered by the University’s ties in the research community and by the strength of the region’s innovation infrastructure.</div><br/>
+
+        <div>Vic Bonneau, president of Electrical Power Systems for GE Aviation, said that among the values of partnering with the University is location — central to GE Aviation Systems’ three existing Miami Valley business locations, its Air Force customer, Wright-Patterson Air Force Base and the GE Aviation engine complex.</div><br/>
+
+        <div>Another value is the University of Dayton Research Institute’s reputation in aviation research and the nearly $100 million a year it attracts for funded research.</div><br/>
+
+        <div>People and their talent are another benefit. “We are always on the lookout for new talent,” Bonneau said. “In this case, the talent that we are talking about generally comes from advanced degree engineers, people with master’s degrees and Ph.D.s. UDRI and UD are excellent sources of this kind of talent.”</div><br/>
+
+        <div>Mickey McCabe, vice president for research at the University, also sees the benefits of this partnership extending to the people of the Miami Valley.</div><br/>
+
+        <div>“Collaborative efforts between GE and UD through the EPISCENTER to develop new integrated electric power systems for aircraft will result in new jobs not only at the EPISCENTER and at UD, but also at the manufacturing facility in Vandalia (Ohio) where the R&D investment is returned as new products for GE to sell,” he said. He expects this “hub of activity” will attract other companies to the region.</div><br/>
+
+        <div>Research at the lab will include computer modeling, simulation and analysis of advanced, dynamic electric power systems design and controls.</div><br/>
+
+        <div>Inside, University of Dayton graduate students will work in the laboratory alongside GE Aviation engineering teams, doing design modeling and testing of aviation electrical systems.</div><br/>
+
+        <div>“We plan to provide, through UDRI, over $1 million a year in R&D funding to pay for those students,” Bonneau said. “They’ll be part of our design teams for their master’s work.”</div><br/>
+
+        <div>University professors, researchers and students will be tapped for their expertise on specific projects, and they will also participate in design reviews for GE Aviation customers“Our goal is to develop relationships with young researchers who would then want to work for us,” Bonneau said.</div><br/>
+
+        <div>The economic impact of the lab is being felt before the first laboratory even opens. The $51 million building, owned by the University and leased to GE Aviation, has employed 17 subcontractors, plus designers and GE vendors. At the height of construction, the daily payroll of $35,000 helped support the families of 120 workers.</div><br/>
+
+        <div>GE Aviation personnel are expected to move into the building in early August.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Dec 07, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>http://www.udayton.edu/news/articles/2013/07/ge_aviation_preview.php</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a5-->
+<div data-role="page" id="a5">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Farnborough: Interview with Lorraine Bolsinger, CEO of GE Aviation Systems
+    </div>
+    <div class="a-body">
+        <div>A new generation of more efficient aircraft will take to the skies in the near future carrying General Electric-built systems that do not burn gas. Though not as headline grabbing as the company's next generation GE9X, GEnx or Leap engines, the slate of new technologies offered by GE Aviation Systems, headed by Lorraine Bolsinger, will set the standard for efficiency in relation to vehicle electrical distribution, vehicle health management, integrated propulsion systems and performance-based navigation.</div><br/>
+
+        <div>"Last year was a year of execution," says Bolsinger, chief executive of GE Aviation Systems. "We had some very big plans, big growth plays we launched in 2010, and 2011 was about making those happen."</div><br/>
+
+        <div>Included in those plans and executions was delivering the Boeing 787 "common core" computing systems and landing gear actuation, indication and nose wheel steering systems. "[The 787] has taken a lot of our time and attention," says Bolsinger, noting that the "early introduction to service has been very good"</div><br/>
+
+        <div>The company is working with Gulfstream Aerospace on an integrated vehicle health management (IVHM) system for the new G650 large-cabin, ultra long-range business jet, set for certification later this year. Announced in October 2011, the two contracts include installing the system, branded by Gulfstream as PlaneConnect, on the aircraft and to operate the service. In addition to the components on the aircraft, the IVHM must also tie in to the operator's enterprise systems, for instance, for maintenance scheduling and parts planning.</div><br/>
+
+        <div>Bolsinger says an announcement for IVHM on a second business jet platform is "close", and perhaps the first airline customer could be announced by the end of the year. "We're talking to customers about the benefit they might see having IVHM on their aircraft," says Bolsinger. "Airline customers don't want more data; they want decisions and they want solutions; they want to turn unscheduled events into scheduled events."</div><br/>
+
+        <div>She says the industry loses $8 billion in revenue per year to mechanical delays. "If we could put a dent in that number with prognostics that can predict well in advance of a failure, it gives airlines a chance to turn that unscheduled event into a scheduled event."</div><br/>
+
+        <div>While IVHM can be retrofitted to the aircraft, "the bigger piece is working with airline on enterprise integration," says Bolsinger. "The hardware and algorithms are done."</div><br/>
+
+        <div>GE is working several "proof of concept" demonstrations with major airlines that are set to conclude soon, says Bolsinger. "Certainly by the end of the year we would like to have a launch customer," she says.</div><br/>
+
+        <div>The development of GE Systems' integrated propulsion system (IPS) technology, selected for the Comac C919 narrowbody airliner and the Bombardier Global 7000 and Global 8000 business jets, is underway and additional platforms could be added. An IPS boosts the efficiency of the engine/nacelle/pylon pairing for a specific aircraft.</div><br/>
+
+        <div>"We're very encouraged on IPS for jets," says Bolsinger. "But we also have propeller business at GE Aviation Dowty. We're looking at whether you could have similar results in IPS on turboprops."</div><br/>
+
+        <div>Bolsinger says there's likely to be a resurgence of turboprops as a result of volatile fuel prices and shorter markets with smaller runways. "We think there's an opportunity for turboprops we haven't seen before," she says. "If you look at the fundamental economics of turboprops versus regional jets, turboprops are inherently more efficient for certain routes. Those routes have a growth trajectory now. We've been talking with a couple of airframers looking at potential new turboprop studies."</div><br/>
+
+        <div>She says current studies of IPS considering the aircraft's wing and propeller show the potential of a 4-5% efficiency gain. "We're bullish on 2%," she says.</div><br/>
+
+        <div>On the avionics front, the company continues to develop the integrated modular avionics for the C919, as well as the flight management system (FMS), displays and onboard maintenance systems, work that GE is doing as part of an avionics joint venture with Aviation Industry Corporation of China (AVIC), the C919 builder.</div><br/>
+
+        <div>"We completed our avionics joint venture with AVIC in the end of March," says Bolsinger. "It's probably the hardest thing in the world to do - taking part in the [Comac] C919 programme as we are standing up the joint venture. Our first priority is staying on schedule for first flight. Secondly, we're building the capability for long term."</div><br/>
+
+        <div>Tightly connected with avionics systems is the company's performance-based navigation services arm, which recently won a contract with the US Federal Aviation Administration to develop required navigation performance procedures at five US airports. "We think it is a watershed activity and pivot point for NextGen taking off," says Bolsinger. "We're working around the world, proving you can save fuel and time, emissions and shorten overall distance of flight."</div><br/>
+
+        <div>Another capability aimed at the longer term is more efficient primary and secondary power distribution systems. The company began setting up two integration laboratories over the past year, one in Cheltenham, UK, and one in Dayton, Ohio, where end-to-end power systems can be simulated for military and commercial aircraft.</div><br/>
+
+        <div>"The beauty of both of these is that they have large generator drive train capabilities - 3MW in Dayton and 6MW in the UK," says Bolsinger. "It's a playground for electrical engineers."</div><br/>
+
+        <div>The facilities will study primary and secondary electrical load management as well as loading and shedding schemes. The first fully integrated load management system will be for a business jet application, says Bolsinger. She says the project will be for a new aircraft, but would not provide additional details.</div><br/>
+
+        <div>Along with load management, GE is working to make electric power devices more efficient. "Electric power has already quadrupled in the last five years on commercial aircraft," says Bolsinger, adding that the need for electric power is probably going to double again in the next four of five years.</div><br/>
+
+        <div>A by-product of "more electric" is more heat that is generated and must be accommodated; an issue GE is addressing with the silicon carbide technologies. "We've made some incredible breakthroughs," says Bolsinger. "We're looking at silicon carbide taking out maybe 400lb [181kg] on a commercial aircraft. For combat aircraft and unmanned aircraft, where power density is critical, the technologies will allow for missions to be completed that wouldn't otherwise be completed."</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Jul 09, 2012</div>
+        <div class="gray-header">Source</div>
+        <div>By John Croft</div><div>Flight Daily News</div>
+        <div>http://www.flightglobal.com/news/articles/farnborough-interview-with-lorraine-bolsinger-ceo-of-ge-aviation-systems-373761/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a6-->
+<div data-role="page" id="a6">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        GE ‘all in’ on aviation deal with China
+    </div>
+    <div class="a-body">
+        <div>GRAND RAPIDS, Mich. — At a General Electric flight simulator here, the visibility has been set at near zero to mimic thick rain and clouds. But a video console near the pilot shows a vivid picture of nearby mountains precise enough to allow a plane to take off or land despite the conditions.</div><br/>
+
+        <div>The system is one of several highly valuable next-generation technologies that GE has developed — and that the company has passed along to China as part of a joint venture with the state-owned Aviation Industry Corporation of China (AVIC).</div><br/>
+
+        <div>Access to the world’s second-largest economy is critical for nearly any global company. Yet this often comes at a cost: the transfer of the very technologies that leading business officials — including GE chief executive Jeffrey Immelt, who heads an Obama administration panel on U.S. jobs and competitiveness — cite as essential to the United States’ economic future. The “synthetic vision” system, for example, could be worth millions of dollars to airlines, which could significantly reduce costs from weather-related delays.</div><br/>
+
+        <div>GE, like other companies, must weigh which technologies should be brought to joint ventures with China and how to protect them from being stolen or misused. These decisions face virtually any executive trying to develop a presence in the country — from the most sophisticated technology firms, which worry about software piracy, to old-line industrial equipment makers, which have seen knockoffs of their products pop up soon after making deals with Chinese partners.</div><br/>
+
+        <div>Under the agreement with AVIC, GE avionics will be on board a new Chinese commercial airliner that is likely to become a rival to aircraft produced by U.S.-based Boeing and Europe’s Airbus. The potential competition with Boeing, coming at a time when the United States is fighting to maintain its own manufacturing base, has stirred some American criticism.</div><br/>
+
+        <div>But GE executives say they have had no second thoughts. China’s airplane market is booming, and the deal was too important to pass up, they said, even at the cost of sharing the avionics technology.</div><br/>
+
+        <div>“We are all in and we don’t want it back,” said Lorraine Bolsinger, chief executive of GE Aviation Systems. She said new airplanes don’t come along that often, and that the chance to be part of developing a major new aircraft is not to be missed — even if most of the jobs will be in Shanghai or elsewhere in China.</div><br/>
+
+        <div>“We don’t sell bananas,” she said in an interview here. “We can’t afford to take a decade off.”</div><br/>
+
+        <div>But American business leaders wonder privately whether companies such as GE are at risk of giving up long-term strategic advantages when they agree to technology-transfer deals for shorter-term gain.</div><br/>
+
+        <div>GE executives maintain that is not the case. They say that they negotiated robust protections in their contract with AVIC. The 50-50 joint venture, for example, has strict limits on employing Chinese nationals who have a military or intelligence background. A board committee that monitors compliance with the joint venture agreement is effectively under GE’s control and can, in a dispute, overrule the full board, Bolsinger said.</div><br/>
+
+        <div>Said John Rice, GE’s Hong Kong-based vice president: “We are not naïve about it. Is there risk? Sure. But there is risk in any country.”</div><br/>
+
+        <div>Studies by the U.S. Chamber of Commerce have criticized what the organization calls an intricate network of Chinese state policies meant to acquire as much technical capacity as possible from abroad in hopes of advancing China beyond being a source of cheap labor.</div><br/>
+
+        <div>Demographics are making it urgent for authorities to develop their own higher-value products and technologies. China’s population is peaking, wages are rising and the pool of younger workers is in decline.</div><br/>
+
+        <div>At the same time, China is hard to ignore. Hundreds of new planes are expected to be purchased in coming years by Chinese airlines and foreign firms operating in the country, and the Chinese government has put the power of its state-owned enterprises behind developing commercial aircraft to compete for that business.</div><br/>
+
+        <div>GE’s joint venture with AVIC will employ about 300 engineers, software designers and others in the United States. If all goes as planned, it could boost GE’s fortunes in the avionics field, where it now ranks fourth behind market leaders such as Honeywell.</div><br/>
+
+        <div>The number of jobs to be created in China would be much higher. GE executives say it is difficult to imagine otherwise. The “colonial” model — of multinationals making products in the developed world and selling them to the developing world — is long outdated, they argue.</div><br/>
+
+        <div>The Obama administration, seeking to create jobs at home, has put a priority on boosting U.S. exports. The White House has tapped corporate leaders such as Immelt and Boeing chief executive James McNerney to help develop a strategy.</div><br/>
+
+        <div>According to a statistical model used by the Commerce Department, U.S. exports to China last year supported more than half a million jobs. But that was dwarfed by imports from China, and the resulting $273 billion trade deficit represented a significant drain on U.S. employment.</div><br/>
+
+        <div>American critics of China argue that it remains a state-controlled economy that takes advantage of its trading partners. These critics cite China’s managed exchange rate, which they say keeps Chinese exports artificially cheap in dollars and American goods expensive, as well as the use of government power and subsidies to support Chinese industries.</div><br/>
+
+        <div>Immelt himself, in private comments in Rome that famously became public, questioned China’s sincerity in developing a truly open economy.</div><br/>
+
+        <div>GE has been doing business in China for decades and the experience has been as varied as the kind of products involved. On some fronts, the company is fighting to protect its technology, while on others it is battling to get its American-made goods past Chinese import restrictions. Yet there are also what the firm considers unqualified successes, such as joint ventures with the Chinese in medical equipment. And the company is even looking to transfer some Chinese technology — involving high-speed rail — back to the United States.</div><br/>
+
+        <div>That landscape is far more complex than when Rice first visited China in the late 1980s looking for local production of mechanical timers and other simple components used in home appliances being assembled in the United States. Since then, countries such as China, India and Brazil have pushed to develop their capacity for the making advanced equipment.</div><br/>
+
+        <div>“Thirty years ago, it was easy for global companies to fly into some place and sell a jet engine or a gas turbine, leave, ship in the product, get paid and export the profits to shareholders in some other place,” Rice said. “What China and many countries figured out is that is not a path to long-term prosperity. ... The old days are not working anymore in any country.”</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Aug 22, 2011</div>
+        <div class="gray-header">Source</div>
+        <div>By Howard Schneider</div>
+        <div>http://www.washingtonpost.com/business/economy/ge-all-in-on-aviation-deal-with-china/2011/07/17/gIQAgPmTXJ_story.html</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a7-->
+<div data-role="page" id="a7">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        GE Aviation Breaks Ground for New $51 Million Research & Development Center in Ohio's Aerospace Hub
+    </div>
+    <div class="a-body">
+        <div>Dayton, OH -- GE Aviation broke ground today on its new Electrical Power Integrated Systems Research and Development Center (EPISCENTER) on the University of Dayton campus in Dayton, Ohio. The $51 million center will be built on about eight acres on the University of Dayton's campus on River Park Drive. </div><br/>
+
+        <div>"GE's new R & D center will be the southern anchor to the Ohio Aerospace Hub of Innovation and Opportunity," said Lorraine Bolsinger, president and CEO of GE Aviation Systems. "This location and future facility will help all stakeholders in attracting high caliber engineering talent. The center will be a catalyst for new contracts and products resulting in job growth at the EPISCENTER and at GE locations such as Vandalia." </div><br/>
+
+        <div>The University is working with CityWide Development Corp. to build the facility to GE's specifications. GE is finalizing a long-term lease agreement with the University of Dayton and CityWide. The 120,000 square foot facility is expected to be completed by the third quarter of 2012 and operational by the end of 2012. </div><br/>
+
+        <div>"Without a doubt, it's extraordinary for a Fortune 100 corporation to build a multi-million-dollar research facility on a college campus in today's economic climate," said Daniel J. Curran, president of the University of Dayton. "Our researchers will work side by side with GE scientists and engineers to develop electrical power systems and technologies. The applications are numerous — from next-generation power systems for aircraft to longer-range electric cars. Even smarter utility power grids for more efficient delivery of electricity." </div><br/>
+
+        <div>The center's close proximity to Wright-Patterson Air Force Base and the University of Dayton Research Institute is important in order to provide significant new support to the Air Force Research Labs and the University of Dayton. The University's researchers will work with GE to develop and deploy computer modeling, simulation and analysis of advanced, dynamic electric power systems design and controls. </div><br/>
+
+        <div>The center will be directed at several markets including end-to-end electrical power starter/ generation, conversion, distribution, and load technologies for civil and military aerospace applications. </div><br/>
+
+        <div>In November 2010, GE announced it would build the EPISCENTER on the University of Dayton campus. The project was enabled by an Ohio Third Frontier capital grant for up to $7.6 million. While GE recognized the value of locating in the Aerospace Hub, making such a decision competitive with other options required significant collaboration between UD, GE, the City of Dayton, Montgomery County and CityWide Development Corporation. It also demonstrates the value of the Aerospace Hub in attracting jobs and providing a focus for economic development efforts. </div><br/>
+
+        <div>The EPISCENTER will complement GE Aviation's new Electrical Power Integrated Center (EPIC) located in Cheltenham, UK, which will be operational this year. Together, these two research centers will augment GE Aviation's existing research and development capabilities, further enabling collaborative research and driving innovation. </div><br/>
+
+        <div>GE Aviation, an operating unit of GE (NYSE: GE), is a world-leading provider of jet engines, components and integrated systems for commercial and military aircraft. GE Aviation has a global service network to support these offerings. GE Aviation Systems LLC and GE Aviation Systems Ltd are subsidiaries of General Electric Company. </div><br/>
+
+
+        <div class="gray-header">Published</div>
+        <div>April 14, 2011</div>
+        <div class="gray-header">Source</div>
+        <div>http://www.geaviation.com/press/systems/systems_20110414.html</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a8-->
+<div data-role="page" id="a8">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        GE Aviation expects to add 200 more area jobs
+    </div>
+    <div class="a-body">
+        <div>GE Aviation Systems’ $50 million investment on the University of Dayton campus bodes well for the company and the area, the company’s president and chief executive said Monday.</div><br/>
+
+        <div>In the past five years, GE Aviation has added 400 jobs at its three Dayton-area plants. In 2013, the company’s new Electrical Power Integrated Systems research and development center (EPISCenter) off River Park Drive will be operating.</div><br/>
+
+        <div>An initial 50 people will work there, but within five years, the center should employ 150 to 200 researchers, said Lorraine Bolsinger, GE Systems president and chief executive.</div><br/>
+
+        <div>At the center, UD researchers will work with GE Aviation scientists and engineers to create new advanced electrical power technologies such as new power systems for aircraft, longer-range electric cars and smarter utility power grids for more efficient delivery of electricity, GE Aviation said.</div><br/>
+
+        <div>“The long-term implications for the Dayton area are really enormous,” Bolsinger said.</div><br/>
+
+        <div>Bolsinger spoke at the Dayton Area Chamber of Commerce annual meeting Monday at the Schuster Center.</div><br/>
+
+        <div>Evendale-based GE Aviation has 1,400 employees at three local sites — two in Vandalia as well as Unison Industries in Beavercreek — and 9,000 employees in Ohio overall, Bolsinger said.</div><br/>
+
+        <div>With a credit card operation in Kettering, GE has 2,600 Dayton-area employees, the company said.</div><br/>
+
+        <div>Bolsinger expects commercial and military jet engine production as well as production of unmanned aerial vehicles to grow in coming years, with the $6 billion being spent on UAVs worldwide today doubling in the next decade. She called UAVs a “platform you want to be on.”</div><br/>
+
+        <div>GE’s overall annual payroll in Ohio is $750 million, with $1.2 billion spent annually with more than 1,000 Ohio suppliers, the company said. Bolsinger said $1 out of every $41 in the Ohio economy is driven by GE, the overall company.</div><br/>
+
+        <div>Dan Curran, University of Dayton president, pointed to recent news that Australian airline Qantas has ordered engines to for 78 new Airbus aircraft. GE Aviation’s local workforce is expected to contribute to that order, Curran said. And UD students will work for GE Aviation in China beginning in August, he added.</div><br/>
+
+        <div>Of the new EPISCENTER, Curran said: “It’s dramatically changing the landscape of Dayton.”</div><br/>
+
+        <div>“I can assure you that this center will be so world-class that every electrical engineer who graduates will want to work there,” Bolsinger said.</div><br/>
+
+        <div>Also Monday, the chamber recognized Kettering-based nano-materials producer NanoSperse LLC with its Soin Award for Innovation. The award comes with a $25,000 cash prize for the firm that works to give composite materials properties desirable for aviation uses.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>May 01, 2012</div>
+        <div class="gray-header">Source</div>
+        <div>By Thomas Gnau</div>
+        <div>http://www.daytondailynews.com/news/business/ge-aviation-expects-to-add-200-more-area-jobs/nPSCY/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a9-->
+<div data-role="page" id="a9">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        GE Aviation Study Shows Millions in Savings for Airlines, Reduced Flight Time for Travelers
+    </div>
+    <div class="a-body">
+        <div>Washington, D.C. -- Airlines could save at least $65.6 million annually while slashing carbon emissions and cutting flight times by implementing new flight paths at 46 mid-size airports across the U.S., according to study results released today by GE Aviation. The findings of the study, Highways in the Sky, come at a critical time in the debate on the future of our aging national air traffic control infrastructure, where additional investment is increasingly measured against proven benefits to the economy, environment and the everyday traveler. Steve Fulton, technical fellow with GE Aviation highlighted the results today at the NextGen Ahead Air Transportation Modernization conference in Washington, DC. </div><br/>
+
+        <div>GE's Highways in the Sky study illustrates the potential for significant economic and environmental benefit of near-term deployment of Required Navigation Performance (RNP) landing approaches. Although the study focused on 46 mid-sized U.S. airports, the data and analysis supports accelerated deployment of RNP at any airport. GE's study of the 46 airports concludes that deployment of RNP instrument arrivals would annually save:</div><br/>
+
+        <div>12.9 million gallons of jet fuel, or 527 round-trip flights from New York to Los Angeles</div><br/>
+
+        <div>$65.6 million, a savings equivalent to the full-time salary of 1,573 middle-class jobs</div><br/>
+
+        <div>274.6 million pounds of C02, equal to the carbon absorbed every year by 1,384,095 trees.</div><br/>
+
+        <div>747 days of flight time, or roughly two years and seventeen days in the sky</div><br/>
+
+        <div>"We are facing a serious global challenge as air traffic increases and our skies become more and more congested," said Lorraine Bolsinger, President and CEO of GE Aviation Systems. "This is an opportunity to provide tangible benefits to every stakeholder; responsible growth of an essential industry, better asset utilization, lower fuel burn and cost for airlines, greater throughput for airports and ANSPs, fewer delays for passengers, lower emissions and noise for communities and reduced dependence on foreign oil." </div><br/>
+
+        <div>RNP technology allows aircraft to fly precisely-defined trajectories without relying on outdated, ground-based radio-navigation signals. Independence from a fixed, ground based infrastructure, linked with the inherent precision of satellite navigation and advanced computer technology aboard the aircraft allow the creation of shorter, more consistent and more efficient flight paths. The consistency and efficiency of the new flight paths can reduce flight delays helping to alleviate costly air traffic congestion. ICAO, the International Civil Aviation Organization, has predicted that efficiencies made possible by RNP alone can cut global CO2 emissions by 13 million metric tons per year. </div><br/>
+
+        <div>"There is no reason the U.S. aviation industry should be tied to a ground-based beacon system that was developed in the 1940s," said Captain Brian Will, Director -- Airspace Modernization and Advanced Technologies for American Airlines. "GE Aviation's Highways in the Sky study clearly demonstrates the tremendous benefits realized through satellite-based navigation. RNAV and RNP provide benefits to all airspace users. For controllers and pilots, we have safety benefits from reduced radio transmissions and reduced controller workload and increased pilot situational awareness. For the airport communities, RNAV and RNP can reduce both noise and emissions - this is a win-win-win scenario, everyone benefits."</div><br/>
+
+        <div>Underscoring the importance of realizing these benefits, the Federal Aviation Administration (FAA)'s annual aviation forecast predicts that domestic air travel will double in the next 20 years, reaching the 1 billion passenger mark in the U.S. alone by 2021. In addition, the total cost of all U.S. air transportation delays is estimated at $32.9 billion by the National Center of Excellence for Aviation Operations Research. </div><br/>
+
+        <div>In many locations around the world, RNP is already demonstrating significant benefits. In Brisbane, Australia, government sponsored trials demonstrated that RNP instrument approach procedures saved aircraft operators 882,000 pounds of jet fuel a year, even though only 18 percent of the aircraft were capable of flying the procedures. Based on those results, Airservices Australia is implementing RNP at 28 airports nationwide, which it expects will save operators nearly 86 million pounds of jet fuel each year. </div><br/>
+
+        <div>***********</div><br/>
+
+        <div>Highway in the Sky Methodology </div><br/>
+
+        <div>GE Aviation's PBN Services' analysis projected the benefits of RNP deployment at 46 U.S. airports that either have existing published RNP procedures or a significant number of arrivals of RNP-capable aircraft. A total of six models of aircraft for 12 national airlines were included in the study. </div><br/>
+
+        <div>An average time savings of three minutes per flight was used to derive the average operating benefit of an aircraft flying on an RNP approach. Only direct aircraft operational savings were taken into account, which includes savings due to reductions in fuel (accounting for 41% of savings), maintenance costs and crew costs. Calculations were made using 2009 fuel prices, which have since risen significantly and can be extrapolated into further savings today. Indirect operator costs, such as on-time performance and diversions, are highly dependent on airlines and were not included in analysis, making these figures highly conservative. </div><br/>
+
+        <div>GE Aviation, an operating unit of GE (NYSE: GE), is a world-leading provider of jet engines, components and integrated systems for commercial and military aircraft. GE Aviation has a global service network to support these offerings. GE Aviation Systems LLC, GE Aviation Systems Ltd, and Naverus, Inc. are subsidiaries of GE.</div><br/>
+
+        <div>GE Aviation develops and implements technologies that provide significant economic and environmental benefits to airlines, airports and the communities they serve. GE's PBN Services is a world leader in the design and deployment of Performance-based Navigation and is working with aircraft operators and air traffic management providers in China, South and Central America, the United States, Australia, New Zealand, Canada and Europe to implement PBN solutions. Learn more about GE's PBN Services at: www.naverus.com.</div><br/>
+
+
+        <div class="gray-header">Published</div>
+        <div>May 10, 2011</div>
+        <div class="gray-header">Source</div>
+        <div>http://www.geaviation.com/press/systems/systems_20110511.html</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a10-->
+<div data-role="page" id="a10">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        GE Aviation, Boeing land $180M deal for U.S. Air Force tankers
+    </div>
+    <div class="a-body">
+        <div>GE Aviation and Boeing Co. signed an agreement to provide the mission control system for the U.S. Air Force’s KC-46A tanker, a deal worth up to $180 million.</div><br/>
+
+        <div>The agreement includes design, development and production throughout the life of the program</div><br/>
+
+        <div>“We are committed to bringing our next-generation technologies to this new tanker platform,” Lorraine Bolsinger, president and CEO of GE Aviation Systems, said in a news release. “These systems will enable the aircraft to perform with navigation precision not currently available to the tanker fleet and will help enable efficient operations in our future airspace.”</div><br/>
+
+        <div>GE Aviation was selected for the mission control system including the flight management system. This system gives the tanker the ability to fly short flight paths, reduce fuel consumption, lower emissions and reduce noise.</div><br/>
+
+        <div>Boeing will build up to 179 next-generation aerial refueling tanker aircraft that will begin to replace the Air Force’s fleet of 416 KC-135 tankers.</div><br/>
+
+        <div>Based in Evendale, GE Aviation is an operating unit of General Electric Co. (NYSE: GE) that makes jet and turboprob engines, components and integrated systems for commercial, military, business and general aviation aircraft.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>July 16, 2012</div>
+        <div class="gray-header">Source</div>
+        <div>Cinniti Business Courier</div>
+        <div>http://www.bizjournals.com/cincinnati/news/2012/07/16/ge-aviation-boeing-land-180m-deal.html</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a11-->
+<div data-role="page" id="a11">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        GE's China avionics deal: A Q&A with president/CEO Lorraine Bolsinger
+    </div>
+    <div class="a-body">
+        <div>With the news that GE is close to wrapping up its deal to create a new civilian avionics joint venture with China’s AVIC, we asked Lorraine Bolsinger, president and CEO for GE’s Aviation Systems, to explain key portions of the deal and what steps are being taken to prevent unauthorized technology transfer.</div><br/>
+
+        <div class="speaker">Q: What is the JV?</div><br/>
+
+        <div class="answer">A: It’s a brand new business being created by GE Aviation and AVIC that will create and market commercial integrated avionics systems around the world to such aircraft manufacturers as Boeing, Airbus, China’s COMAC — which is the launch customer with its C919 narrow body jetliner — Bombardier and Embraer. The integrated avioincs system combines technologies in the aircraft that include navigation, cockpit displays, communications, and surveillance, to name a few. The joint venture’s initial focus is to provide integrated avionics system for the C919 aircraft now under development, and to build a global customer and product support infrastructure. Think of the integrated avionics system for an aircraft as much like the operating system on your computer.</div><br/>
+
+
+        <div class="speaker">Q: Why do a JV?</div><br/>
+
+        <div class="answer">A: GE Aviation is the world’s leading jet engine producer, but the company became a significant avionics supplier through the 2007 purchase of Smiths Aerospace. The teaming between AVIC and GE is the result of both companies desiring to become a tier-one, commercial avionics supplier globally, and we are thrilled to have launched our first products and services for the C919 program. GE Aviation has a tremendous relationship with the Chinese aviation industry. GE Aviation already generated revenues of $778 million in 2010 from sales and services in China alone. That figure is expected to grow to $1 billion in 2011. With COMAC anticipating the delivery of more than 2,300 C919 aircraft over the 20-year life of the program, the JV is already off to a strong start.</div><br/>
+
+        <div class="answer">We also have a history of successful JVs, as this one with AVIC will be the fourth 50/50 joint partnership company for GE Aviation. The other three are CFM International (producer of the most popular jet engine in aviation history), GE Honda Aero Engines (producer of jet engines for small corporate jets), and The Engine Alliance (a JV between GE and Pratt & Whitney which produces engines for the A380.)</div><br/>
+
+        <div class="speaker">Q: What protections are in place to safeguard the technologies?</div><br/>
+
+        <div class="answer">A: GE and AVIC are technology companies and place a high value on protecting technology. The JV will be creating new technologies and GE, AVIC and the JV have every interest in protecting intellectual property, which will be a key asset of the venture. GE and AVIC have agreed to ensure the GE AVIC JV establishes a robust compliance plan to guard the technology and ensure that it is used solely for civilian applications.</div><br/>
+
+        <div class="answer">Importantly, only approved personnel will be employed by the JV and there are strict security measures outlined in our technology control plan, or TCP, such as physically separating the JV from the parent companies and separating the information technology side of the JV from the parents. We’ll also have third party compliance audits conducted at least once a year.</div><br/>
+
+        <div class="speaker">Q: How do you know your safeguards are enough?</div><br/>
+
+        <div class="answer">A: During the two and half years we’ve worked on the formation of this JV, we’ve been consulting with the leading experts in global trade and business to ensure full government compliance and the highest level of security with regards to intellectual property and export controls. And we have continued to consult with relevant U.S. government agencies during this process.</div><br/>
+
+        <div class="speaker">Q: Does the US government provide any oversight to this transaction, now or ongoing?</div><br/>
+
+        <div class="answer">A: GE’s main contribution to the JV will be what’s called commercial IMA technology, which stands for integrated modular avionics – basically the computing system for the aircraft. Commercial IMA and IMA technology doesn’t require a license for export to most countries, including China. The JV will also supply onboard maintenance systems and display systems to COMAC, but it’s likely that much of this content will be made by the parent companies.</div><br/>
+
+        <div class="speaker">Q: How will you make sure that sensitive technology does not get transferred to the military?</div><br/>
+
+        <div class="answer">A: We’ve kept it very clear: No AVIC or person in China who retains military-related responsibilities will be given access to technical data from GE or the JV – and there’s no cross-employment allowed with military or intelligence departments – or with their suppliers. To make sure there is no gray area, AVIC personnel are not allowed to work for the military or be put on a military assignment for two years after leaving the JV.</div><br/>
+
+        <div class="speaker">Q: What does it mean for U.S. jobs?</div><br/>
+
+        <div class="answer">A: Even though the JV will be headquartered in Shanghai, the JV will support and maintain at least 300 high-tech jobs each in the US and China as well as a significant number of jobs in the U.K. — and that number is expected to grow. In the U.S, the majority of the jobs supporting the JV will be in Grand Rapids, Michigan; and Clearwater, Florida. In all, GE Aviation’s work in China translates into about 1,800 GE high-technology jobs in the U.S. They involve producing and supporting jet engines for China, as well as developing the new engine and avionics system for the C919.</div><br/>
+
+        <div class="gray-header">Sources</div>
+        <div>http://www.reliableplant.com/Read/28331/GE-China-avionics-deal</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a12-->
+<div data-role="page" id="a12">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        Imagination at Work
+    </div>
+    <div class="a-body">
+        <div>It’s rare for a global company to build a huge research center on a college campus, but GE Aviation doesn’t think small. Neither do we.</div><br/>
+
+        <div>The world’s largest jet engine supplier spends about $1 billion annually on research-and-development efforts and plans to double its engine production during the next decade. I admire that kind of forward-thinking philosophy because we think and act boldly, too.</div><br/>
+
+        <div>When finished this summer, GE Aviation’s new EPISCENTER rising along 8 acres at Patterson Boulevard and River Park Drive will create more electric power than any other lab of its kind in the world. The company says this aerospace research complex will be the “intellectual heart and soul” of GE Aviation’s electrical power business.</div><br/>
+
+        <div>It will stand as a testament to what imagination — and collaboration — can accomplish. In the higher education landscape nationally, this innovative partnership can be a model for the future.</div><br/>
+
+        <div>When we bought our first big parcel of land from NCR in 2005, we worked with regional leaders to secure the federal and state funds necessary to transform the largely vacant urban brownfield into a vibrant academic and mixed-use development. We envisioned attracting strong companies that could spur additional research, serve as real-world classrooms and spark economic development for the region.</div><br/>
+
+        <div>Admittedly, some people thought that was a far-fetched idea. Not only is the EPISCENTER, which stands for Electrical Power Integrated Systems Center, opening this summer, Midmark, a worldwide manufacturer and supplier of health care products, is moving its corporate headquarters to the 1700 South Patterson Building on our River Campus. These companies are looking for intellectual talent, for young professionals to join their ranks and build a future of innovation in Dayton. GE Aviation and Midmark will only have to look in their backyard for their future leaders.</div><br/>
+
+        <div>Internships, particularly those that lead to full-time positions, are the top recruiting strategy for a growing number of employers. In the past year alone, we’ve seen a remarkable 43 percent jump in postings for internships and co-ops through our Career Placement Center.</div><br/>
+
+        <div>GE Aviation wants to tap into the best minds in our classrooms and labs. That’s why the company is committing at least $1 million annually to bring graduate engineering students into the EPISCENTER to work on design teams.</div><br/>
+
+        <div>Talk about a résumé builder. As Lorraine Bolsinger, then-president and CEO of GE Aviation Systems, told community leaders at the 2012 Dayton Area Chamber of Commerce annual meeting, “This will not be an ivory tower kind of place. This is not a center where people will walk around in white lab coats and tinker in R&D as a hobby. GE scientists will team with UD graduate students and faculty to develop new electrical power systems for future aircraft. And we will sell them worldwide.”</div><br/>
+
+        <div>That’s the kind of vision we at UD like, bold and forward-thinking.</div><br/>
+                      
+        <div class="gray-header">Published</div>
+        <div>Jul 11th, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>By President Daniel J. Curran</div><div>University of Dayton</div>
+        <div>http://udquickly.udayton.edu/udmagazine/2013/07/imagination-at-work/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a13-->
+<div data-role="page" id="a13">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">
+        It's not like selling bananas, says GE Aviation exec Bolsinger
+    </div>
+    <div class="a-body">
+        <div>As the Courier reported in February, GE Aviation Systems has been making a big push in China, where it formed a joint venture with the leading domestic aerospace systems company.</div><br/>
+
+        <div>This article in the Washington Post this week also explores the risks GE faces, and its rationale for accepting them in exchange for what it regards as a rare chance for a part in developing a major new aircraft.</div><br/>
+
+        <div>The Post quotes GE Aviation Systems CEO Lorraine Bolsinger: “We don’t sell bananas. We can’t afford to take a decade off.”</div><br/>
+
+        <div>Sitting here in the shadow of the Chiquita Center, we had to wonder, what does taking a decade off have to do with bananas?</div><br/>
+
+        <div>So we asked."</div><br/>
+
+        <div>Bolsinger’s point was, new aircraft don’t come along very often, so the company needs to be ready when opportunities arise, said GE spokeswoman Jennifer Villarreal.</div><br/>
+
+        <div>“It just has to do with continuing to develop products and advancing the systems for the aircraft so you’re ready for the next generation.”</div><br/>
+
+        <div>Chiquita Brands International Inc. spokesman Ed Loyd declined an opportunity to weigh in.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Aug 23, 2011, 4:50pm EDT</div>
+        <div class="gray-header">Source</div>
+        <div>By Jon Newberry</div>
+        <div>http://www.bizjournals.com/cincinnati/blog/2011/08/its-not-like-selling-bananas-says-ge.html</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a14-->
+<div data-role="page" id="a14">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">LORRAINE BOLSINGER • GENERAL ELECTRIC</div>
+    <div class="d-title">PRESIDENT & CEO, GE AVIATION SYSTEMS</div>
+
+    <div class="a-body">
+        <div>Education: BS, Biomechanical Engineering, University of Pennsylvania
+        First Job: Clerk in family store
+        What I'm Reading: Anna Karenina, by Leo Tolstoy; Profiles in Courage, by John F. Kennedy
+        My Philosophy: With commitment, anything is possible.
+        Family: A wonderful husband, Brien, and two children, Kimberly and Christopher
+        Interests: Tennis, golf, skiing, surfing, cooking, reading
+        Favorite Charities: March of Dimes, Midwestern Children’s Home</div><br>
+
+        <div>I’ve always appreciated the value of a great team but no more so than in the last three years when my team and I had the challenge of integrating an acquisition, growing the business, developing new product strategies, forming a Chinese joint venture, driving culture change, and adding $16 billion of new product orders. (PHEW!) Not many teams surmount so much challenge or change. In trying to share with you the special ingredients of this indomitable team, I found myself describing four ridiculously simple qualities that in grade school made the best kickball team: big, fast, smart and fun.</div><br/>
+
+        <div>Big. They’re accountable and committed. You know the “go to” person who always comes through. How do you know they will? Because they always have. They have a reputation for it. Others want to follow these leaders who get things done because everyone revels in the sense of accomplishment and purpose.</div><br/>
+
+        <div>Fast. You have to run to keep up with them. They set the pace, anticipate what’s coming, and figure out how to work around it, leverage it, or change it. They’re not afraid to make decisions and their energy is contagious and uplifting.</div><br/>
+
+        <div>Smart. They have a million ideas and they know the difference between good and bad ones. They are equally good at thinking heady, abstract thoughts and developing clever, pragmatic plans to get resources marshaled. They’re tough-minded, intellectually curious and they are not afraid to challenge you.</div><br/>
+
+        <div>Fun. People like being around them because they are exhilarating, spirited. They have a great sense of humor and a keen sense of self. They attract talent to the team because, well… they’re fun!</div><br/>
+
+        <div>Sometimes you get really lucky and find all these qualities rolled into one person…what a find! More often than not, you need to draft these diverse “all-stars” and then create an environment where everyone is valued for both their unique talents and their commitment to win as a team. It worked in grade school…still does. I hope you have a chance to coach a team like this as it will make you bigger, faster, smarter and a lot more fun.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Sep 1, 2011 </div>
+        <div class="gray-header">Source</div>
+        <div>http://www.womenworthwatching.com/lorraine-bolsinger/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a15-->
+<div data-role="page" id="a15">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">Q&A with GE Aviation Systems' Lorraine Bolsinger</div>
+
+    <div class="a-body">
+        <div>Lorraine Bolsinger is president and CEO of GE Aviation Systems LLC, a $2.2 billion unit of GE Aviation. The Aviation Systems business is a global provider of electrical power systems, avionics, actuation and landing gear, aerostructures and propeller systems to the builders and operators of military and civil aircraft. Before being named to her role in 2008, Bolsinger was vice president of Ecomagination, the company’s initiative to develop more energy-efficient products. “Now I’m inside of a business and have 9,000 people working for me,” she said.</div><br/>
+
+        <div>Why do you have the career you have?</div><br/>
+
+        <div>Having a degree in engineering was critical. The biggest accelerator to my career was an early entry-level training program I was in for almost three years.</div><br/>
+
+        <div>What’s the most difficult aspect of your job?</div><br/>
+
+        <div>Right now, it’s the fact that we have to make some very difficult decisions in a very tough environment. The difficult part is to … keep the company operating in a responsible way and be ready in two years’ time when growth returns.</div><br/>
+
+        <div>What advice would you give a new boss?</div><br/>
+
+        <div>Get to know your team, go out and meet with people who work for you. Get a sense for their pace, their culture. Nothing ever takes the place of walking around and looking at things. You can read the financials and know what the operating margin is, and that’s good. But there’s a smell to a place. It’s your intuition. Does it feel like a place where the pace is fast, where the people are can-do? Or is it a place where it’s hang-dog, can’t do? The other thing I’d say is you’ve got to go meet your customers. Before you fall in love with your own ideas, go out and get external feedback.</div><br/>
+
+        <div>What is your favorite vacation spot? </div><br/>
+
+        <div>By far, we go every year to Maui, Hawaii. A few years ago, my children and husband and I learned how to surf. It’s really our time to reconnect.</div><br/>
+
+        <div>Describe your perfect life. </div><br/>
+
+        <div>I can’t imagine anything much better than this. I think it’s doing something that you love and feeling good about the results of it. I love business and the advancement of business. When you work in an industry that is as essential and vital as aviation, it’s very exciting.</div><br/>
+
+        <div>You’ve just been given $100,000 to donate to charity. Which and why?</div><br/>
+
+        <div>I’ve got two favorites. I’d give $50,000 to the March of Dimes. I used to be on the board, and we walk as a family every year. The other would be the American Cancer Society. I’ve lost a lot of relatives to cancer and would certainly love to see a breakthrough there.</div><br/>
+
+        <div>What is the best book you’ve ever read?</div><br/>
+
+        <div>I love anything written by or about Ben Franklin, because he is my favorite guy in the whole world. </div><br/>
+
+        <div>How do you most like to spend money?</div><br/>
+
+        <div>When it comes to responsibly spending my money, I like spending my money on my kids’ education. … I also like clothing and jewelry and frivolous things. </div><br/>
+
+        <div>What scares you?</div><br/>
+
+        <div>I’m deathly afraid of snakes. … I am afraid of people who have nothing to lose. If society doesn’t help people to value life, family, country, personal property, it really scares me.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>June 11, 2009</div>
+        <div class="gray-header">Source</div>
+        <div>Lucy May </div>
+        <div>http://www.bizjournals.com/cincinnati/stories/2009/06/15/story15.html?page=all</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a16-->
+<div data-role="page" id="a16">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">Six social-media skills every leader needs</div>
+
+    <div class="a-body">
+        <div>Organizational social-media literacy is fast becoming a source of competitive advantage. Learn, through the lens of executives at General Electric, how you and your leaders can keep up.</div><br/>
+
+        <div>Few domains in business and society have been untouched by the emerging social-media revolution—one that is not even a decade old. Many organizations have been responding to that new reality, realizing the power and the potential of this technology for corporate life: wikis enable more efficient virtual collaboration in cross-functional projects; internal blogs, discussion boards, and YouTube channels encourage global conversations and knowledge sharing; sophisticated viral media campaigns engage customers and create brand loyalty; next-generation products are codeveloped in open-innovation processes; and corporate leaders work on shaping their enterprise 2.0 strategy.</div><br/>
+
+        <div>This radical change has created a dilemma for senior executives: while the potential of social media seems immense, the inherent risks create uncertainty and unease. By nature unbridled, these new communications media can let internal and privileged information suddenly go public virally. What’s more, there’s a mismatch between the logic of participatory media and the still-reigning 20th-century model of management and organizations, with its emphasis on linear processes and control. Social media encourages horizontal collaboration and unscripted conversations that travel in random paths across management hierarchies. It thereby short-circuits established power dynamics and traditional lines of communication.</div><br/>
+
+        <div>We believe that capitalizing on the transformational power of social media while mitigating its risks calls for a new type of leader. The dynamics of social media amplify the need for qualities that have long been a staple of effective leadership, such as strategic creativity, authentic communication, and the ability to deal with a corporation’s social and political dynamics and to design an agile and responsive organization.</div><br/>
+
+        <div>Social media also adds new dimensions to these traits. For example, it requires the ability to create compelling, engaging multimedia content. Leaders need to excel at cocreation and collaboration—the currencies of the social-media world. Executives must understand the nature of different social-media tools and the unruly forces they can unleash.</div><br/>
+
+        <div>Equally important, there’s an organizational dimension: leaders must cultivate a new, technologically linked social infrastructure that by design promotes constant interaction across physical and geographical boundaries, as well as self-organized discourse and exchange.</div><br/>
+
+        <div>We call this interplay of leadership skills and related organizational-design principles organizational media literacy, which we define along six dimensions that are interdependent and feed on one another (exhibit).</div><br/>
+
+        <div>Exhibit</div><br/>
+
+        <div>The six dimensions of social-media-literate leadership.</div><br/>
+
+        <div>Our clearest window on the development of these new forms of literacy is General Electric, where one of us is responsible for leadership development. Witnessing GE through this lens is particularly interesting; unlike Google or Amazon, GE isn’t a digital native, and its 130-year tradition of reinventing businesses and itself makes it worth watching. So does GE’s status as a “leadership factory.”</div><br/>
+
+        <div>GE’s commitment to social media is perhaps most visible through its digital platform GE Colab, designed by GE employees for GE employees to facilitate global teamwork and collaboration. GE Colab combines the capabilities of Facebook, Twitter, and other social applications, allowing easy networking, information sharing, instant communication, advanced search, blogging, videoblogs, and more. Launched in 2012, the platform has already attracted more than 115,000 users.</div><br/>
+
+        <div>To get a sense of how executives deal with these new realities, we interviewed GE officers of various businesses and regions. These leaders and their organizations are at different mileposts along the journey to social-media literacy, just as different companies are. In aggregate, though, they described a rich range of efforts to build personal skills, experiment with technologies, invest in new tools, expand employee participation, and shape organizational structures and governance to capture emerging social opportunities. We drew on those experiences to illustrate the six-dimensional set of skills and organizational capabilities leaders must build to create an enterprise level of media literacy—capabilities that will soon be a critical source of competitive advantage.</div><br/>
+
+        <div>1. The leader as producer: Creating compelling content</div><br/>
+
+        <div>With video cameras achieving near ubiquity and film clips uploading in the blink of an eye to YouTube or other platforms, the tools for producing and sharing rich media are in everyone’s hands. GE’s Video Central now houses thousands of videos, many created by top leaders. More than a few executives have started to incorporate video streams into their blogs. As video communication rises in importance, effective leadership will increasingly require the kind of creative skills we know from the world of “auteur” filmmaking—an authentic voice, imagination, and the ability to craft compelling stories and to turn them into media products that make people take note and “lean forward.” To engage in real time on a personal level, executives will also need the technical skills to master the basics of digital-multimedia production, including how to shoot and, if necessary, edit videos.</div><br/>
+
+        <div>Mark Begor, who runs GE Capital’s real-estate business, was nervous when he shot his first “unplugged” video message. “I was used to a studio environment where I could do several takes and have editors polish what I wanted to say.” That unease soon vanished with practice. He now routinely produces a weekly five- to ten-minute video for his division. “I talk about what I learned during the week, about a great deal we’ve closed, and the status of the business. I also add comments about employees that I want to recognize.” Begor says that this routine forces him to crystallize his thinking and that creating short stories people can relate to makes him more aware of his strategy and communication.</div><br/>
+
+        <div>As Begor and others have discovered in this process, the logic of participatory media is strikingly different from that of traditional corporate broadcast media, where each and every piece of communication gets perfectly crafted. Too much perfection is actually a barrier to collaboration and cocreation, as it disinvites participation. To thrive in the world of social media, leaders need to acquire a mind-set of openness and imperfection, and they must have the courage to appear “raw” and unpolished—traits that may be as challenging for them as developing the creative and technical-production skills.</div><br/>
+
+        <div>2. The leader as distributor: Leveraging dissemination dynamics</div><br/>
+
+        <div>Business leaders have traditionally disseminated information along a controlled, linear chain that begins after the development of a formal meaning-creation process—think of how your company creates and distributes memos explaining new initiatives. While traditional distribution pathways won’t disappear, social media revolutionizes the standard information process by reversing it. Social communication makes distribution the starting point and then invites company audiences to cocreate and contextualize content to create new meaning. Messages are rebroadcast and repurposed at will by recipients who repost videos, retweet and comment on blogs, and use fragments of other people’s content to create their own mash-ups.</div><br/>
+
+        <div>As the (vertical) broadcast media and the (horizontal) participatory media converge, leaders need to master the interplay of two fundamentally different paradigms: those of the traditional channels, which follow the logic of control, and of the new channels, where it is essential to let the system’s dynamics work without too much direct intervention. Since executives won’t be able to govern or control a message once it enters the system, they must understand what might cause it to go viral and how it may be changed and annotated while spreading through the network. Distribution competence—the ability to influence the way messages move through complex organizations—becomes as important as the ability to create compelling content.</div><br/>
+
+        <div>Equally important is the skill of creating and sustaining a body of social followers who help to spread and reinforce the message. It becomes critical to know who an organization’s key—and often informal—influencers are and to leverage their authority to push content through the right channels. Finally, leaders must recognize their role as redistributors of the content they receive, so they can leverage the communication continuously happening around them.</div><br/>
+
+        <div>Lorraine Bolsinger, vice president and general manager of GE Aviation Systems, acquired these skills through experimentation. She began blogging a few years ago but initially didn’t get much response. “It took time to get my audience actively involved,” she recalls. “I had to find my voice and become more conversational, more easygoing.” To increase the allure and sustainability of the dialogue, she eventually created a “360 blog,” where all her direct reports blog with her on the same platform. This networked blog, with 12 regular contributors, provides additional points of view on issues, promotes more frequent communication, and attracts broader participation. Bolsinger says that the quality of her group’s dialogue about strategy and operations has improved thanks to these efforts.</div><br/>
+
+        <div>3. The leader as recipient: Managing communication overflow</div><br/>
+
+        <div>Social media has created an ocean of information. We are drowning in a never-ending flood of e-mails, tweets, Facebook updates, RSS feeds, and more that’s often hard to navigate. “There is too much noise out there,” says Stuart Dean, CEO of GE ASEAN,2 who is an active blogger and tweets regularly about issues in his market space. “I’d use Twitter much more as a source of information if I could get exactly what I need.”</div><br/>
+
+        <div>Dean’s sentiment is echoed by most executives we know—many of them barely find time to catch up with their daily e-mail load. What to do? As a first step, leaders must become proficient at using the software tools and settings that help users filter the important stuff from the unimportant. But playing in today’s turbulent environment requires more than just filtering skills.</div><br/>
+
+        <div>In traditional corporate communications, consumption is a mostly passive act: you are pretty much left alone to make sense of messages and to assess their authenticity and credibility. In the social-media realm, information gets shared and commented on within seconds, and executives must decide when (and when not) to reply, what messages should be linked to their blogs, when to copy material and mash it up with their own, and what to share with their various communities. The creation of meaning becomes a collaborative process in which leaders have to play a thoughtful part, as this is the very place where acceptance of or resistance to messages will be built.</div><br/>
+
+        <div>“You have to see the entire communication universe, the interplay of traditional and social media,” says Bill Ruh, head of GE’s Software and Analytics Center. Just as leaders suffer from overflow, so do their people. “As a leader,” says Ruh, “you have to develop empathy for the various channels and the way people consume information.”</div><br/>
+
+        <div>4. The leader as adviser and orchestrator: Driving strategic social-media utilization</div><br/>
+
+        <div>In most companies, social-media literacy is in its infancy. Excitement often runs high for the technology’s potential to span functional and divisional silos. But without guidance and coordination, and without the capabilities we discuss here, social-media enthusiasm can backfire and cause severe damage.</div><br/>
+
+        <div>To harvest the potential of social media, leaders must play a proactive role in raising the media literacy of their immediate reports and stakeholders. Within this 360-degree span, executives should become trusted advisers, enabling and supporting their environment in the use of social tools, while ensuring that a culture of learning and reflection takes hold. As a new and media-savvy generation enters the workplace, smart leaders can accelerate organizational change by harnessing these digital natives’ expertise through “reverse mentoring” systems (see later in this article).</div><br/>
+
+        <div>Steve Sargent, president and CEO of GE Australia and New Zealand, believes that social media is reshaping the leadership culture by pushing executives to span geographic boundaries, engage more closely with stakeholders, and amplify the impact of employees at the periphery. Over the past five years, as proof of concept, Sargent has established a mining-industry network that cuts across GE’s businesses and regions, linking informal teams that use social platforms to collaborate on solving customer needs. GE employees in Brazil, for instance, now work with colleagues in Australia to develop products and services for customers doing business in both countries. The network’s success led the company to elevate it to the status of a full-fledged GE mining business. “Markets today are complex and multidimensional, and leadership isn’t about control but about enabling and empowering networks,” Sargent says. “The type of leadership we need finds its full expression in the DNA of collaborative technology, and I am determined to leverage this DNA as much as I can.”</div><br/>
+
+        <div>To achieve this goal, leaders must become tutors and strategic orchestrators of all social-media activities within their control, including the establishment of new roles that support the logic of networked communication—for instance, community mentors, content curators, network analysts, and social entrepreneurs. Organizational units that leverage the new technologies in a coordinated and strategically aligned way will become more visible and gain influence in a corporation’s overall power dynamics.</div><br/>
+
+        <div>5. The leader as architect: Creating an enabling organizational infrastructure</div><br/>
+
+        <div>Leaders who have steeped themselves in new media will testify that it requires them to navigate between potentially conflicting goals: they must strive to establish an organizational and technical infrastructure that encourages free exchange but also enforce controls that mitigate the risks of irresponsible use. This is a tough organizational-design challenge.</div><br/>
+
+        <div>Most companies have a defined formal organization, with explicit vertical systems of accountability. But below the surface of org charts and process manuals we find an implicit, less manageable “informal organization,” which has always been important and now gets amplified through social media. The leader’s task is to marry vertical accountability with networked horizontal collaboration in a way that is not mutually destructive.</div><br/>
+
+        <div>This challenge is reflected in GE’s policies, which embrace the value of sharing expertise and perspectives with family, friends, colleagues, customers, and other stakeholders around the world. With this openness comes a shared responsibility: employees must observe GE standards of transparency and integrity, refrain from speaking on behalf of the company without authorization, and be clear in their social messaging that their views are personal.</div><br/>
+
+        <div>In this spirit, creating a social architecture that provides a meaningful space for internal and external interactions has been an ongoing mission for Andrew Way, vice president of GE’s Oil & Gas Drilling & Surface Division. “I love the social-media stuff,” he says, “so I surround myself with an organization that supports it.”</div><br/>
+
+        <div>In Way’s last role in the division, he and his team launched a video project about the history and current timeline of the business. Since the videos are shared with customers, team members must make choices about which content can cross external boundaries. “It’s an evolving thing. Every quarter, the team adds a new segment that features important things that happened in the last three months. It has resulted in a continuing story, and people look forward to every new version.”</div><br/>
+
+        <div>Way says that the videos have united division members around common goals, helping to bring new employees on board and making everyone more proficient in using new media. “Three years ago, an effort like this would have used PowerPoint with a standardized font. It clearly has created a new culture.” Boosting engagement with stakeholders such as customers is an added benefit, since videos often include them in segments to help tell stories.</div><br/>
+
+        <div>6. The leader as analyst: Staying ahead of the curve</div><br/>
+
+        <div>As companies start to digest the consequences of the Web 2.0 revolution, the next paradigm shift is already knocking on the door. The next generation of connectivity—the Internet of Things—will link together appliances, cars, and all kinds of objects. As a result, there will be about 50 billion connected devices by the year 2020.3 This transformation will open new opportunities, spawn new business models, and herald yet another major inflection point that leaders must manage.</div><br/>
+
+        <div>It’s imperative to keep abreast of such emerging trends and innovations—not just their competitive and marketplace implications, but also what they mean for communications technologies, which are fundamental for creating an agile, responsive organization. Executives who monitor weak signals and experiment with new technologies and devices will be able to act more quickly and capture the advantages of early adoption.</div><br/>
+
+        <div>GE’s leadership university, Crotonville, is leading a number of initiatives to help top executives stay ahead of those changes. One example is a program called Leadership Explorations, launched in 2011 to support continuous learning for top executives and organized in locales connected with a specific strategic-leadership theme. In Silicon Valley, leaders are immersed in a range of cutting-edge technologies. Part of the program there involves “reverse mentoring,” which connects media-savvy millennials with senior GE leaders to discuss the latest tech buzz and practice. Many participants continue to exchange insights long after the formal session is over. Exposing seasoned leaders to the millennial mind-set encourages them to experiment with new technologies—which, in turn, helps them better engage with up and comers.</div><br/>
+
+        <div>Clearly, these are early days. Most companies recognize social media as a disruptive force that will gather strength rather than attenuate. But social-media literacy as we define it here is not yet an element of leadership-competency models or of performance reviews and reward systems. Equally, it has not yet found its way into the curricula of business schools and leadership-development programs.</div><br/>
+
+        <div>This needs to change. We are convinced that organizations that develop a critical mass of leaders who master the six dimensions of organizational media literacy will have a brighter future. They will be more creative, innovative, and agile. They will attract and retain better talent, as well as tap deeper into the capabilities and ideas of their employees and stakeholders. They will be more effective in collaborating across internal and external boundaries and enjoy a higher degree of global integration. They will benefit from tighter and more loyal customer relationships and from the brand equity that comes with them. They will be more likely to play leading roles in their industries by better leveraging the capabilities of their partners and alliances in cocreation, codevelopment, and overall industry collaboration. And they will be more likely to create new business models that capitalize on the potential of evolving communications technologies.</div><br/>
+
+        <div>It takes guts to innovate radically in leadership and organization, for legacy systems, cultures, and attitudes are powerful forces of inertia. Fortunately, the inherent quality of social media is a powerful transformational force. Social-media engagement will confront leaders with the shortcomings of traditional organizational designs. Leaders who address these shortcomings will learn how to develop the enabling infrastructure that fosters the truly strategic use of social technologies. When organizations and their leaders embrace the call to social-media literacy, they will initiate a positive loop allowing them to capitalize on the opportunities and disruptions that come with the new connectivity of a networked society. And they will be rewarded with a new type of competitive advantage.</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Feb 2013 </div>
+        <div class="gray-header">Source</div>
+        <div>By Roland Deiser and Sylvain Newton</div>
+        <div>http://www.mckinsey.com/insights/high_tech_telecoms_internet/six_social-media_skills_every_leader_needs</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a17-->
+<div data-role="page" id="a17">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">Stirring GE's Ecomagination</div>
+
+    <div class="a-body">
+        <div>Can a corporate behemoth the size of General Electric, rooted in the traditional energy business, be good for the planet?</div><br/>
+
+        <div>It certainly can, according to Ecomagination, a high-profile initiative inside GE to make environmentally conscious products that still result in healthy profits.</div><br/>
+
+        <div>To the public, the Ecomagination advertising and marketing campaign seems to have put a different face on GE--a conglomerate that makes everything from lightbulbs to TV shows.</div><br/>
+
+        <div>But while GE's happy to tout its green credentials, its vice president of Ecomagination, Lorraine Bolsinger, is wary of "greenwashing."</div><br/>
+
+        <div>Putting an eco-friendly spin on products to improve a corporate image without the goods to back it up will ultimately set the company--and its financial goals--back, according to Bolsinger, who says she welcomes feedback from environmental activists.</div><br/>
+
+        <div>GE Chief Executive Jeffrey Immelt tapped Bolsinger two years ago to lead GE's efforts to capitalize on global environmental problems, from climate change to fresh-water shortages. That responsibility also includes reducing greenhouse gas emissions at GE, which is a member of the U.S. Climate Action Partnership, a collection of industrial businesses lobbying for climate change regulations.</div><br/>
+
+        <div>During a tour of GE's labs this week in Niskayuna, N.Y., Bolsinger spoke to CNET News.com about the birth of the Ecomagination "growth strategy," clean technologies on the drawing board, and the tension of going green in Corporate America.</div><br/>
+
+        <div>GE was one of the first U.S.-based companies to make a bet and say there was money to be made in cleaner technologies. What was behind the initial push? </div><br/>
+
+        <div>Bolsinger: When you look at our company, it's pretty easy to understand why we would have been in the space so early on. You might say we are really smart, we're really progressive, and I'd like to think that. It's also because of the very nature of things that we make. Everything that we make, just about, uses electricity or produces electricity or some kind of energy, some kind of motive power.</div><br/>
+
+        <div>You're big in energy. </div><br/>
+
+        <div>Bolsinger: We're big in energy, and we invest in energy, so it sort of touches everything that we do. We looked at some trends. (CEO) Jeff Immelt does something called a growth playbook every year with each of his businesses. Think of it as a strategic plan for the next three to five years and beyond.</div><br/>
+
+        <div>What he heard over and over were three themes for businesses. One, we are going to see enormous (gross domestic product) growth around the world. Two, we will see a scarcity of resources--scarcity of water, scarcity of (energy) resources, and higher prices that go along with that. And the security of supply is at best questionable and, of course, we see that. And the third theme is that we're going to be living in a world where regulations are going to become more and more stringent, not just in the United States but around the world.</div><br/>
+
+        <div>So we are at a point in time when we have a group of (energy) technologies in our portfolio, and we have to respond to this. We can either wait to see what happens, or we can get out in front of it. Obviously, Immelt decided to get out in front of it, and so we launched Ecomagination.</div><br/>
+
+        <div>Ecomagination is for us, above everything else, a growth strategy. It is a business strategy based on the idea that by investing in technologies to help customers solve these big megatrends that we're seeing, to help them grow sustainably in this world--where there is more regulation, more scarcity, higher energy costs--that we can grow sustainably as well. So what's good for business is good for the environment, and what's good for the environment can be good for business.</div><br/>
+
+        <div>Reducing your company's own greenhouse gas emissions is also part of the initiative. Why is that? </div><br/>
+
+        <div>Bolsinger: That's a very important piece of this because you don't have a lot of credibility if you're out there, telling everyone else, "You ought to do it, but it's not for us." Is a very important backbone of what we do.</div><br/>
+
+        <div>You said you're set to top the $20 billion mark in Ecomagination revenue. Yet it's not a separate division, and you're such a diversified company. How do you count it? Is a cleaner gas turbine part of Ecomagination? </div><br/>
+
+        <div>Bolsinger: Yes. In order for something to be an Ecomagination-certified product, it has to have two characteristics--not one or the other, but both. It has to be significantly and measurably better in operating performance as well as environmental performance.</div><br/>
+
+        <div>If we got this great green technology, but it's totally unaffordable, we say no, that's not ready to be an ecoproduct. It has to be better, in terms of operating performance for the customer--to give them some economic return--as well as the environmental piece of it. And we use a third party to help in the certification process.</div><br/>
+
+        <div>Why do you work with a third party to certify what you're doing? </div><br/>
+
+        <div>Bolsinger: We want our claims to be authentic and certifiable. Otherwise, you're a greenwasher. We like tough standards, and I think that one of the marks of whether a process is good or not is whether everything squeaks through. And frankly, not everything does.</div><br/>
+
+        <div>I'm glad that not everything makes it through because I think we have to be stringent about this. I find that the environmental-activist community is very unforgiving--that's probably a good thing. I'm sure you know about all the news reports about greenwashing and nonverifiable claims about (carbon) offsets and carbon neutrality. I think we have to be ever-vigilant to never cross that line because it's a long way back.</div><br/>
+
+        <div>So if half of your product portfolio is already greener, will it all be, at some point? </div><br/>
+
+        <div>Bolsinger: You know, someday, I think we'll stop counting. Don't ask when that is. Maybe when I leave this job, that'll be the day, but we continue to count because we want to be on the record, we want to make sure that we are making progress.</div><br/>
+
+        <div>But I do believe that at some point in time, customers are going to say, "I don't want anything but an environmentally friendly product." It won't be acceptable to have something that is cheap but dirty. Do I think that eventually everything is going to be an ecoproduct? I do, at least from the equipment perspective.</div><br/>
+
+        <div>How far off is that day? </div><br/>
+
+        <div>Bolsinger: I'd say certainly 10 years from now, probably sooner--probably closer to 5.</div><br/>
+
+        <div>We're here at your research labs. How do see technology addressing climate change?</div><br/>
+
+        <div>Bolsinger: I'd say that when you look at where the world needs to be--let's say we really have to have 80 percent lower (greenhouse gas) emissions by the middle of the century, right? That's the "walking around" numbers that the scientists say.</div><br/>
+
+        <div>Eighty percent is huge. So I say in the next 5 to 10 years, we're going to focus on component efficiencies. Making everything more efficient by an order of magnitude, so you might say the GE (aircraft) engine is 15 percent more efficient--that's a good one. The Evolution locomotive with 40 percent lower nitrogen oxide emissions. More efficient lighting. (The list goes on.)</div><br/>
+
+        <div>All those component things are doable. I think that the next generation of technologies--say, in the next 10 to 20 years--will revolve more around systems, looking at bigger broader systems play. Because now you need to get 20, 30, 40 percent improvements. We're going to be looking at total air traffic management. Not just making the engine in the airplane a little more efficient--the whole system has to get more efficient.</div><br/>
+
+        <div>And further out, it's really transformational technologies. Truly breakthroughs that we don't have on the radar screen today. Or making those breakthroughs more cost-competitive. The next-generation solar, battery technology, biofuels.</div><br/>
+
+        <div>We have to work on those today if you are going to be see them 20 years from now--it takes that long to get the infrastructure in place. We're doing the research today on how to make it cost-competitive, deployable, all those things. We've got to be working on those things today if we expect it to be in any way mainstream by midcentury.</div><br/>
+
+        <div>How about the nonenergy parts of GE? What does Ecomagination mean to them? </div><br/>
+
+        <div>Bolsinger: We have more folks wanting to create certified products than we could have imagined. It's easy to imagine the technologies that I've already talked about. The energy business already has an enormous (amount of) renewable technologies--everything from biogas turbines to gas turbines to wind and solar, integrated coal gasification. You can understand those.</div><br/>
+
+        <div>The surprises for me have been the financial-services business coming to us, creating a green credit card. There's no end to this thing. I didn't think we thought about ecohomes. It just serves as a muse for how our business groups can work together--our water (purification) and energy business, for example.</div><br/>
+
+        <div>Has there been any skepticism at all? There are people who don't believe in global warming and climate change. Has that been a barrier at all? </div><br/>
+
+        <div>Bolsinger: No, it hasn't. First of all, we took off the table the debate about climate change a long time ago</div><br/>
+                      
+        <div>There are fewer and fewer people who are skeptics on climate change. People who say, "I don't believe it" or "I don't see it," they kind of are outliers at this point. I think it's much more mainstream. We're past the point of debating the science.</div><br/>
+
+        <div>For us, we said we're just going to take reality as it is. So whether you want to debate climate change until the cows come home doesn't matter. The world is moving in that direction. There is scarcity of resources, there is regulation coming, so let's deal with the world we have. We can keep debating. What's the point of that? The world's has moved on, and we need to keep pace with that.</div><br/>
+
+        <div>I think the skepticism piece was never a big deal for me because (Ecomagination) was never based on "we're doing this for philanthropy" or "we're doing this to make the world safe." We're glad to be doing that as a result of making money. It's a different lens that informs your decisions about where to spend money and what resources you're going to invest.</div><br/>
+
+        <div>Has there been resistance internally? This is a big change. Has it caused conflicts?</div><br/>
+
+        <div>Bolsinger: Not conflicts. I know everybody wants to tell that story that everybody was skeptical. I think the biggest concern in the very beginning was that we didn't overstate things. We didn't turn into this big green machine.</div><br/>
+
+        <div>We've been around for more than 120 years. We have legacy issues. Of course we do. I think you always have to be very careful that you don't step out and try to be holier than thou. You have to do what you're good at.</div><br/>
+
+        <div>So I wouldn't call it skepticism. I would call it healthy concern that we get it right.</div><br/>
+
+        <div>I have an eco-advisory board...We bring in outsiders to tell us how we are doing because I think it's important.</div><br/>
+
+        <div>So I wouldn't say skeptics. I'd say there is tension in the businesses--the kind of tension that you want. Tension means that there is movement. If there's no tension, then it's business as usual--you just call it Ecomagination, and you're not doing anything different.</div><br/>
+
+        <div>I like the tension. The tension comes when we introduce the GE Money (business) to the energy financial-services (business), and we say, "You ought to buy their offsets." And we get these two businesses to work together.</div><br/>
+
+        <div>Does it cause tension? Yeah, but look at the result.</div><br/>
+
+        <div>I'd say if the only other place that we have concern--and we always have concern--is whether customers embrace it. We have to be careful that the customers don't feel that we are so far out in front of them that they can't keep up. </div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Jul 09, 2012</div>
+        <div class="gray-header">Source</div>
+        <div>By Martin LaMonica </div><div>CNET News</div>
+        <div>http://news.cnet.com/Stirring-GEs-Ecomagination/2008-11392_3-6215496.html</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a18-->
+<div data-role="page" id="a18">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/gb-image.png" alt="image"/>
+    <div class="d-title">University of Dayton groundbreaking ceremony for a $51 million GE Aviation research-and-development center</div>
+
+    <div class="a-body">
+        <div>GE Aviation, University of Dayton, state and local officials took part in a blessing and groundbreaking ceremony today for a $51 million research-and-development center on campus.</div><br/>
+
+        <div>Nearly 200 people turned out for what may be the largest groundbreaking in school history. </div><br/>
+
+        <div>The mood was celebratory: "We think the best way to predict the future is to create it," said emcee Mickey McCabe, vice president for research at the University of Dayton. "That's what we're doing today."</div><br/>
+
+        <div>It is the first major construction project on a 50-acre parcel of largely vacant land the University purchased from NCR in 2005 and remediated for redevelopment.</div><br/>
+
+        <div>"The University of Dayton took a big bet in purchasing this abandoned NCR property several years ago, having the vision of future technology business growth, and proactively working for five years to make this land shovel ready," said Lorraine Bolsinger, president and CEO of GE Aviation Systems. "Their vision is becoming reality today."</div><br/>
+
+        <div>Called an Electrical Power Integrated Systems Research and Development Center (EPISCENTER), the facility will be built on eight acres on River Park Drive. It will serve as the southern anchor to the Ohio Aerospace Hub of Innovation and Opportunity. The four-story facility will include a 40,000-square-foot office building connected to an 80,000-square-foot world-class electrical research center. It is expected to be operational by the end of 2012.</div><br/>
+
+        <div>"This location and future facility will aid each of us in attracting high-caliber engineering talent.  What college student wouldn't want to work here? Our researchers will be within walking distance of the University of Dayton Research Institute staff, seven miles from Wright Patterson Air Force Base and a 30-minute drive from several GE Aviation businesses in the Dayton and Cincinnati region," Bolsinger said.</div><br/>
+
+        <div>Daniel J. Curran, president of the University of Dayton, called the project a symbol of Dayton's rebirth and a "wonderful collaboration" between a private research university and a giant corporation.</div><br/>
+
+        <div>"Ultimately, the University of Dayton, in partnership with GE Aviation, may develop new academic programs in high-tech fields, such as advanced electrical power systems. The future possibilities are limited only by our imagination," he said.</div><br/>
+
+        <div>"This is an extraordinary partnership."</div><br/>
+
+        <div class="gray-header">Published</div>
+        <div>Apr 15, 2011</div>
+        <div class="gray-header">Source</div>
+        <div>Prototype Today</div>
+        <div>http://www.prototypetoday.com/news/ge</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Tweets -->
+<div data-role="page" id="videos">
+    <div class="page-title">
+        <span class="title" style="margin-left:13%">Tweets</span>
+        <a class="right" href='javascript:getTweets();'>
+            <img src="img/refresh.png" style="width:25px"/>
+        </a>
+    </div>
+    <div id="tweetList" class="list">
+        
+    </div>
+    <div id="loader" style="visibility:hidden">
+        <img src="css/images/ajax-loader.gif" style="display: block;margin-left: auto; margin-right: auto;">
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('[data-position=fixed]').fixedtoolbar({ tapToggle:false});
+    var totalEl = 0;
+
+    currentVideoId = "";
+    function playSelectedVideo(id){
+        currentVideoId = id;
+        var video = document.getElementById(id);
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    function stopCurrentVideo() {
+        var video = document.getElementById(currentVideoId);
+        video.pause();
+    }
+
+    function getTweets() {
+        $("#tweetList").html("");
+        $("#loader").css("visibility","visible");
+        var twitterAPI = "http://54.215.134.149:8080/data/getdata?type=SearchTweets&q='geaviation'";
+        $.getJSON( twitterAPI, {
+            format: "json"
+        }).done(function( data ) {
+            var tweets = JSON.parse(data.Error);
+            for(var i = 0; i < tweets.statuses.length; i++) {
+
+                var pp = Date.parse(tweets.statuses[i].created_at);
+                var newDate = new Date(pp);
+
+                $('#tweetList').append(
+                        "<div class='tbg'>"
+                        + "<img class='t-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='t-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+
+                if(i == 0){
+                    $('#news').append(
+                        "<div style='display:block'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }else{
+                    $('#news').append(
+                        "<div style='display:none'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }
+            }
+
+            totalEl = tweets.statuses.length;
+            var currentEl = 0;
+            $("#loader").css("visibility","hidden");
+
+            // Bind tweets to the home page
+            var tid = setInterval(function() {
+                $('#news').children().eq(currentEl).slideUp( "slow", function() {
+                    if(currentEl < totalEl - 1)
+                        currentEl += 1;
+                    else
+                        currentEl = 0;
+
+                    $('#news').children().eq(currentEl).fadeIn("slow");
+                });
+            }, 5000);
+        });
+    }
+
+    getTweets();
+
+    function getMonthName(month){
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        for(var i=0; i< months.length; i++){
+            if(i == month){
+                return months[i];
+            }
+        }
+    }
+
+</script>
+
+    <script>
+        
+    </script>
+</body>
+</html>

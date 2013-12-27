@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0024A6AC-8E74-4D8F-8166-9C170701DA22</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LorraineBolsinger</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>45279828-9B45-439E-AA44-D15622DAD365</key>
+		<string>https://github.com/vunguyenduy/LorraineBolsinger.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/LorraineBolsinger.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>45279828-9B45-439E-AA44-D15622DAD365</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vunguyenduy/LorraineBolsinger.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>45279828-9B45-439E-AA44-D15622DAD365</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>45279828-9B45-439E-AA44-D15622DAD365</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LorraineBolsinger</string>
+		</dict>
+	</array>
+</dict>
+</plist>
